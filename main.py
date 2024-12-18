@@ -34,13 +34,14 @@ for ax, f in zip(axs, features):
 plt.show()
 
 reference_feature = selected_features[0]  
-comparison_feature = selected_features[2]  
+comparison_feature = selected_features[4] 
 
 plt.figure(figsize=(8, 6))
-plt.scatter(df[reference_feature], df[comparison_feature], alpha=0.6)
+plt.scatter(df[reference_feature], df[comparison_feature], alpha=0.6, c='pink')
 plt.xlabel(reference_feature)
 plt.ylabel(comparison_feature)
 
 plt.savefig('correlation_plot.png')
 
 plt.show()
+
